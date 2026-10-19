@@ -60,17 +60,27 @@ export function FloorPlanView({
 
   if (!activeBuilding) {
     return (
-      <div className="bg-white border border-slate-200/80 rounded-2xl shadow-card p-12 text-center space-y-4">
-        <Building2 className="w-12 h-12 text-slate-300 mx-auto" />
-        <h3 className="text-[15px] font-semibold tracking-[-0.01em] text-slate-900">No Buildings Configured</h3>
-        <p className="text-[13px] text-slate-500">Create your first residential block to get started.</p>
-        {isAdmin && (
-          <button
-            onClick={() => setIsAddBuildingOpen(true)}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white hover:bg-slate-800 font-semibold rounded-lg text-[13px] shadow-xs transition-colors focus:outline-hidden focus:ring-4 focus:ring-slate-900/20 cursor-pointer"
-          >
-            <Plus className="w-4 h-4" /> Add Building
-          </button>
+      <div className="space-y-6">
+        <div className="bg-white border border-slate-200/80 rounded-2xl shadow-card p-12 text-center space-y-4">
+          <Building2 className="w-12 h-12 text-slate-300 mx-auto" />
+          <h3 className="text-[15px] font-semibold tracking-[-0.01em] text-slate-900">No Buildings Configured</h3>
+          <p className="text-[13px] text-slate-500">Create your first residential block to get started.</p>
+          {isAdmin && (
+            <button
+              onClick={() => setIsAddBuildingOpen(true)}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white hover:bg-slate-800 font-semibold rounded-lg text-[13px] shadow-xs transition-colors focus:outline-hidden focus:ring-4 focus:ring-slate-900/20 cursor-pointer"
+            >
+              <Plus className="w-4 h-4" /> Add Building
+            </button>
+          )}
+        </div>
+
+        {isAddBuildingOpen && (
+          <AddBuildingModal
+            branchId={branch.id}
+            branchName={branch.name}
+            onClose={() => setIsAddBuildingOpen(false)}
+          />
         )}
       </div>
     );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useState, useEffect } from "react";
 import { createRoomAction } from "@/app/actions/properties";
 import { DoorOpen, Layers, Bed, DollarSign, X, AlertCircle, Loader2, Sparkles } from "lucide-react";
 
@@ -35,6 +35,12 @@ export function AddRoomModal({
   const [selectedFloorId, setSelectedFloorId] = useState(floors[0]?.id || "");
   const [selectedRoomTypeId, setSelectedRoomTypeId] = useState(roomTypes[0]?.id || "");
   const [roomNumber, setRoomNumber] = useState("");
+
+  useEffect(() => {
+    if (state?.success) {
+      onClose();
+    }
+  }, [state, onClose]);
 
   const selectedType = roomTypes.find((t) => t.id === selectedRoomTypeId);
   const capacity = selectedType ? selectedType.capacity : 1;

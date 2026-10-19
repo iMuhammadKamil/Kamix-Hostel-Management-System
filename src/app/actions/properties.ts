@@ -19,9 +19,27 @@ export async function createBuildingAction(prevState: any, formData: FormData) {
     }
 
     await prisma.$transaction(async (tx) => {
+      let targetBranchId = branchId;
+      const existingBranch = await tx.branch.findUnique({ where: { id: branchId } });
+      if (!existingBranch) {
+        const firstBranch = await tx.branch.findFirst();
+        if (firstBranch) {
+          targetBranchId = firstBranch.id;
+        } else {
+          const createdBranch = await tx.branch.create({
+            data: {
+              name: "Main Campus",
+              address: "100 University Ave",
+              city: "Metro City",
+            },
+          });
+          targetBranchId = createdBranch.id;
+        }
+      }
+
       const building = await tx.building.create({
         data: {
-          branchId,
+          branchId: targetBranchId,
           name,
           gender,
         },

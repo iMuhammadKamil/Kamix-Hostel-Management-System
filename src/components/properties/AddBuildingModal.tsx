@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { createBuildingAction } from "@/app/actions/properties";
 import { Building2, X, AlertCircle, Loader2 } from "lucide-react";
 
@@ -12,6 +12,12 @@ interface AddBuildingModalProps {
 
 export function AddBuildingModal({ branchId, branchName, onClose }: AddBuildingModalProps) {
   const [state, formAction, isPending] = useActionState(createBuildingAction, null);
+
+  useEffect(() => {
+    if (state?.success) {
+      onClose();
+    }
+  }, [state, onClose]);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/55 backdrop-blur-[3px]">
