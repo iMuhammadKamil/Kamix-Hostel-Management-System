@@ -1,9 +1,9 @@
 "use client";
 
-import { useTransition } from "react";
+import { useTransition, useState } from "react";
 import { devQuickLoginAction } from "@/app/actions/auth";
 import { UserRoles, UserRole } from "@/lib/constants";
-import { ShieldAlert, UserCheck, Calculator, Wrench, GraduationCap, Loader2 } from "lucide-react";
+import { ShieldAlert, UserCheck, Calculator, Wrench, GraduationCap, Loader2, AlertCircle } from "lucide-react";
 
 interface DevRoleSwitcherProps {
   currentRole?: string;
@@ -53,12 +53,16 @@ const ROLES_META: Record<
 
 export function DevRoleSwitcher({ currentRole, variant = "grid" }: DevRoleSwitcherProps) {
   const [isPending, startTransition] = useTransition();
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleRoleSelect = (role: string) => {
+    setErrorMessage(null);
     startTransition(async () => {
       const res = await devQuickLoginAction(role);
       if (res?.success) {
         window.location.href = "/dashboard";
+      } else if (res?.message) {
+        setErrorMessage(res.message);
       }
     });
   };
@@ -98,6 +102,16 @@ export function DevRoleSwitcher({ currentRole, variant = "grid" }: DevRoleSwitch
   }
 
   return (
+    <div className="space-y-3">
+      {errorMessage && (
+        <div className="p-3 rounded-lg bg-rose-50 border border-rose-200 flex items-start gap-2.5 text-[12px] text-rose-700 leading-relaxed">
+          <AlertCircle className="w-4 h-4 shrink-0 mt-0.5 text-rose-600" />
+          <div className="flex-1">
+            <span className="font-semibold">Login Error: </span>
+            {errorMessage}
+          </div>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
         {Object.entries(ROLES_META).map(([role, meta]) => {
           const Icon = meta.icon;
@@ -132,6 +146,7 @@ export function DevRoleSwitcher({ currentRole, variant = "grid" }: DevRoleSwitch
           );
         })}
       </div>
+    </div>
   );
 }
 
