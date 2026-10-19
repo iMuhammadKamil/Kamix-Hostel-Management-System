@@ -7,6 +7,8 @@ import { PrintButton } from "@/components/billing/PrintButton";
 import { Building2, ArrowLeft, CheckCircle2, ShieldCheck, Calendar, DollarSign } from "lucide-react";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 interface InvoiceVoucherPageProps {
   params: Promise<{ invoiceId: string }>;
 }
