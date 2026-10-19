@@ -10,3 +10,4 @@ try {
   console.error("Prisma generate error:", error);
   process.exit(1);
 }
+

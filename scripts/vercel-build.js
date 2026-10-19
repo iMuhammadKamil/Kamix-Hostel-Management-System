@@ -18,3 +18,4 @@ if (process.env.DATABASE_URL && !process.env.DATABASE_URL.includes("localhost:54
 
 console.log("--> Building Next.js application...");
 execSync("npx next build", { stdio: "inherit", env: process.env });
+
