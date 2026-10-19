@@ -1,7 +1,7 @@
 const { execSync } = require("child_process");
 
 if (!process.env.DATABASE_URL) {
-  process.env.DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/kamix_hms?schema=public";
+  process.env.DATABASE_URL = "file:./dev.db";
 }
 
 try {
@@ -10,4 +10,3 @@ try {
   console.error("Prisma generate error:", error);
   process.exit(1);
 }
-
