@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 if (!process.env.DATABASE_URL) {
-  process.env.DATABASE_URL = "file:./dev.db";
+  process.env.DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/kamix_hms?schema=public";
 }
 
 const globalForPrisma = globalThis as unknown as {
