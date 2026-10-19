@@ -39,6 +39,7 @@ export function AddRoomModal({
   useEffect(() => {
     if (state?.success) {
       onClose();
+      window.location.reload();
     }
   }, [state, onClose]);
 

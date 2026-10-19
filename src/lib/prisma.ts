@@ -1,6 +1,27 @@
 import { PrismaClient } from "@prisma/client";
+import fs from "fs";
+import path from "path";
 
-if (!process.env.DATABASE_URL) {
+if (process.env.VERCEL) {
+  const tmpDbPath = "/tmp/dev.db";
+  const candidatePaths = [
+    path.join(process.cwd(), "prisma", "dev.db"),
+    path.join(process.cwd(), "dev.db"),
+    "/var/task/prisma/dev.db",
+    "/var/task/dev.db",
+  ];
+  const bundledDb = candidatePaths.find((p) => fs.existsSync(p));
+
+  if (!fs.existsSync(tmpDbPath) && bundledDb) {
+    try {
+      fs.copyFileSync(bundledDb, tmpDbPath);
+    } catch (e) {
+      console.error("Failed to copy sqlite db to /tmp:", e);
+    }
+  }
+
+  process.env.DATABASE_URL = `file:${tmpDbPath}`;
+} else if (!process.env.DATABASE_URL) {
   process.env.DATABASE_URL = "file:./dev.db";
 }
 
