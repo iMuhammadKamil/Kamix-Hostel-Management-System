@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e111a"/>
+      <stop offset="100%" stop-color="#07080c"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181c28"/>
+      <stop offset="100%" stop-color="#10131d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect width="1200" height="675" rx="16" fill="url(#bgGrad)" stroke="#262b3d" stroke-width="2"/>
+
+  <!-- Top App Window Header -->
+  <rect width="1200" height="48" rx="16" fill="#121520"/>
+  <rect y="36" width="1200" height="12" fill="#121520"/>
+  <circle cx="28" cy="24" r="5" fill="#ef4444" fill-opacity="0.8"/>
+  <circle cx="44" cy="24" r="5" fill="#f59e0b" fill-opacity="0.8"/>
+  <circle cx="60" cy="24" r="5" fill="#10b981" fill-opacity="0.8"/>
+  <rect x="92" y="14" width="220" height="20" rx="6" fill="#1a1e2d"/>
+  <text x="104" y="28" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">app.campus-hms.internal/overview</text>
+
+  <!-- Global Metrics Bar -->
+  <g transform="translate(40, 72)">
+    <!-- KPI 1 -->
+    <rect width="260" height="80" rx="12" fill="url(#cardGrad)" stroke="#24293b" stroke-width="1"/>
+    <text x="20" y="32" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CAMPUS OCCUPANCY</text>
+    <text x="20" y="62" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="800">96.4%</text>
+    <text x="100" y="60" fill="#10b981" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">+4.2% YoY</text>
+    <rect x="204" y="24" width="36" height="36" rx="8" fill="#3b82f6" fill-opacity="0.15"/>
+    <path d="M216 42h12M222 36l6 6-6 6" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- KPI 2 -->
+    <rect x="280" width="260" height="80" rx="12" fill="url(#cardGrad)" stroke="#24293b" stroke-width="1"/>
+    <text x="300" y="32" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ALLOCATED BEDS</text>
+    <text x="300" y="62" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="800">1,420</text>
+    <text x="380" y="60" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">/ 1,480 total</text>
+    <rect x="484" y="24" width="36" height="36" rx="8" fill="#f59e0b" fill-opacity="0.15"/>
+
+    <!-- KPI 3 -->
+    <rect x="560" width="260" height="80" rx="12" fill="url(#cardGrad)" stroke="#24293b" stroke-width="1"/>
+    <text x="580" y="32" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">BILLING DISPATCH</text>
+    <text x="580" y="62" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="800">$284,500</text>
+    <text x="700" y="60" fill="#10b981" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">98% collected</text>
+
+    <!-- KPI 4 -->
+    <rect x="840" width="280" height="80" rx="12" fill="url(#cardGrad)" stroke="#24293b" stroke-width="1"/>
+    <text x="860" y="32" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CURFEW &amp; SECURITY</text>
+    <text x="860" y="62" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="800">100% In-Campus</text>
+    <circle cx="1075" cy="42" r="8" fill="#10b981"/>
+  </g>
+
+  <!-- Main Center Grid Visual -->
+  <g transform="translate(40, 172)">
+    <!-- Main Left Area: Room & Bed Allocation Matrix -->
+    <rect width="720" height="460" rx="14" fill="#0d1017" stroke="#22283a" stroke-width="1.5"/>
+    
+    <!-- Matrix Top Header -->
+    <rect x="20" y="20" width="680" height="42" rx="8" fill="#151926"/>
+    <text x="36" y="46" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700">North Tower • Floor 3 Live Bed Status</text>
+    <rect x="520" y="28" width="160" height="26" rx="6" fill="#20263a"/>
+    <text x="536" y="45" fill="#cbd5e1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">Filter: Active Residents</text>
+
+    <!-- Room Cards Grid -->
+    <!-- Room 301 -->
+    <rect x="20" y="80" width="210" height="160" rx="10" fill="#141824" stroke="#252c42"/>
+    <text x="36" y="106" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Room 301 • Premium Double</text>
+    <rect x="36" y="122" width="80" height="50" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="46" y="142" fill="#bfdbfe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">Bed 301-A</text>
+    <text x="46" y="158" fill="#93c5fd" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">Occupied</text>
+    
+    <rect x="130" y="122" width="80" height="50" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="140" y="142" fill="#bfdbfe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">Bed 301-B</text>
+    <text x="140" y="158" fill="#93c5fd" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">Occupied</text>
+    <text x="36" y="210" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">AC &amp; Ensuite • Attached Balcony</text>
+
+    <!-- Room 302 -->
+    <rect x="250" y="80" width="210" height="160" rx="10" fill="#141824" stroke="#252c42"/>
+    <text x="266" y="106" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Room 302 • Single Deluxe</text>
+    <rect x="266" y="122" width="80" height="50" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="276" y="142" fill="#a7f3d0" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">Bed 302-A</text>
+    <text x="276" y="158" fill="#6ee7b7" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10">VACANT</text>
+    <text x="266" y="210" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Ready for instant onboarding</text>
+
+    <!-- Room 303 -->
+    <rect x="480" y="80" width="220" height="160" rx="10" fill="#141824" stroke="#252c42"/>
+    <text x="496" y="106" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Room 303 • Triple Suite</text>
+    <rect x="496" y="122" width="60" height="50" rx="6" fill="#1e3a8a" stroke="#3b82f6"/>
+    <text x="502" y="152" fill="#bfdbfe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">303-A</text>
+    <rect x="564" y="122" width="60" height="50" rx="6" fill="#78350f" stroke="#f59e0b"/>
+    <text x="570" y="152" fill="#fde68a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">303-B</text>
+    <rect x="632" y="122" width="60" height="50" rx="6" fill="#1e3a8a" stroke="#3b82f6"/>
+    <text x="638" y="152" fill="#bfdbfe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">303-C</text>
+    <text x="496" y="210" fill="#f59e0b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">1 Bed Reserved (Move-in Today)</text>
+
+    <!-- Row 2 -->
+    <rect x="20" y="260" width="680" height="175" rx="10" fill="#131622" stroke="#22283a"/>
+    <text x="36" y="290" fill="#cbd5e1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Live Resident Activity &amp; Check-ins</text>
+    <line x1="36" y1="305" x2="680" y2="305" stroke="#1f2538"/>
+    
+    <!-- Table Rows -->
+    <text x="36" y="332" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">Sophia Martinez</text>
+    <text x="210" y="332" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">Room 301-A • Medical Sciences</text>
+    <rect x="460" y="318" width="80" height="20" rx="10" fill="#10b981" fill-opacity="0.2"/>
+    <text x="474" y="332" fill="#34d399" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">CHECKED IN</text>
+    <text x="580" y="332" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">2 mins ago</text>
+
+    <text x="36" y="365" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">Alexander Hayes</text>
+    <text x="210" y="365" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">Room 303-A • Engineering</text>
+    <rect x="460" y="351" width="80" height="20" rx="10" fill="#3b82f6" fill-opacity="0.2"/>
+    <text x="478" y="365" fill="#60a5fa" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">GATE PASS</text>
+    <text x="580" y="365" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">14 mins ago</text>
+
+    <text x="36" y="398" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">Elena Rostova</text>
+    <text x="210" y="398" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">Room 204-B • Business School</text>
+    <rect x="460" y="384" width="80" height="20" rx="10" fill="#f59e0b" fill-opacity="0.2"/>
+    <text x="472" y="398" fill="#fbbf24" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">FEE VERIFIED</text>
+    <text x="580" y="398" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">42 mins ago</text>
+  </g>
+
+  <!-- Right Sidebar Area: Automated Workflows & Quick Actions -->
+  <g transform="translate(780, 172)">
+    <rect width="380" height="460" rx="14" fill="#0d1017" stroke="#22283a" stroke-width="1.5"/>
+    <text x="24" y="38" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700">Smart Campus Automation</text>
+    <text x="24" y="56" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Zero-touch routine operations</text>
+
+    <!-- Automation Card 1 -->
+    <rect x="20" y="80" width="340" height="105" rx="10" fill="#141824" stroke="#262c40"/>
+    <circle cx="45" cy="110" r="14" fill="#f59e0b" fill-opacity="0.15"/>
+    <path d="M41 110h8M45 106v8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    <text x="70" y="108" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Automated Submeter Ledger</text>
+    <text x="70" y="126" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">AC kWh &amp; heater readings split</text>
+    <text x="70" y="142" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">accurately across room tenants.</text>
+    <rect x="70" y="152" width="90" height="18" rx="4" fill="#20273c"/>
+    <text x="78" y="165" fill="#38bdf8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" font-weight="700">RUNS AT 23:59 UTC</text>
+
+    <!-- Automation Card 2 -->
+    <rect x="20" y="200" width="340" height="105" rx="10" fill="#141824" stroke="#262c40"/>
+    <circle cx="45" cy="230" r="14" fill="#10b981" fill-opacity="0.15"/>
+    <path d="M39 230l4 4 8-8" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="228" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Curfew SMS &amp; Guard Sync</text>
+    <text x="70" y="246" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Real-time gatekeeper handheld sync.</text>
+    <text x="70" y="262" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Overdue alerts triggered for parents.</text>
+    <rect x="70" y="272" width="90" height="18" rx="4" fill="#20273c"/>
+    <text x="78" y="285" fill="#34d399" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" font-weight="700">ACTIVE DESK</text>
+
+    <!-- Automation Card 3 -->
+    <rect x="20" y="320" width="340" height="105" rx="10" fill="#141824" stroke="#262c40"/>
+    <circle cx="45" cy="350" r="14" fill="#8b5cf6" fill-opacity="0.15"/>
+    <text x="70" y="348" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Mess Waste Forecast AI</text>
+    <text x="70" y="366" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Opt-out headcount prediction cuts</text>
+    <text x="70" y="382" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">kitchen food wastage by 34%.</text>
+    <rect x="70" y="392" width="115" height="18" rx="4" fill="#20273c"/>
+    <text x="78" y="405" fill="#a78bfa" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" font-weight="700">NEXT MEAL: DINNER</text>
+  </g>
+
+  <!-- Clear Placeholder Watermark/Badge -->
+  <rect x="420" y="638" width="360" height="26" rx="6" fill="#000000" fill-opacity="0.8" stroke="#3b82f6" stroke-width="1"/>
+  <text x="435" y="655" fill="#93c5fd" font-family="ui-monospace, monospace" font-size="10" font-weight="700" letter-spacing="1">[PLACEHOLDER: LIVE HMS CONSOLE PREVIEW]</text>
+</svg>
+

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%" fill="none">
+  <rect width="600" height="420" rx="16" fill="#0d1017" stroke="#22283a" stroke-width="2"/>
+  <rect x="20" y="20" width="560" height="40" rx="8" fill="#151926"/>
+  <circle cx="40" cy="40" r="4" fill="#ef4444"/>
+  <circle cx="54" cy="40" r="4" fill="#f59e0b"/>
+  <circle cx="68" cy="40" r="4" fill="#10b981"/>
+  <text x="90" y="44" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">Gate &amp; Curfew Command Center</text>
+  
+  <!-- Curfew live radar -->
+  <g transform="translate(30, 80)">
+    <rect width="540" height="150" rx="10" fill="#141824" stroke="#252c42"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Digital Gate Pass Approvals &amp; QR Scanning</text>
+    
+    <!-- Pass Item 1 -->
+    <rect x="20" y="45" width="500" height="42" rx="6" fill="#1c2130"/>
+    <text x="32" y="71" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">GP-9012 • Weekend Night-Out</text>
+    <text x="230" y="71" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Expected In: 22:30 PM</text>
+    <rect x="370" y="56" width="70" height="20" rx="10" fill="#10b981" fill-opacity="0.2"/>
+    <text x="382" y="70" fill="#34d399" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">APPROVED</text>
+    <text x="460" y="71" fill="#60a5fa" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">[QR Valid]</text>
+
+    <!-- Pass Item 2 -->
+    <rect x="20" y="96" width="500" height="42" rx="6" fill="#1c2130"/>
+    <text x="32" y="122" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">GP-9015 • Emergency Medical Exit</text>
+    <text x="230" y="122" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11">Hospital Visit • Accompanied</text>
+    <rect x="370" y="107" width="70" height="20" rx="10" fill="#f59e0b" fill-opacity="0.2"/>
+    <text x="385" y="121" fill="#fbbf24" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="700">ESCORT</text>
+    <text x="460" y="122" fill="#34d399" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">Logged Out</text>
+  </g>
+
+  <!-- Curfew compliance metrics -->
+  <g transform="translate(30, 245)">
+    <rect width="540" height="135" rx="10" fill="#131622" stroke="#22283a"/>
+    <text x="20" y="32" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Real-Time Rollcall &amp; Curfew Compliance</text>
+    
+    <rect x="20" y="50" width="160" height="65" rx="8" fill="#1b2030"/>
+    <text x="32" y="75" fill="#34d399" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">INSIDE CAMPUS</text>
+    <text x="32" y="98" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">1,388 (98.4%)</text>
+
+    <rect x="190" y="50" width="160" height="65" rx="8" fill="#1b2030"/>
+    <text x="202" y="75" fill="#60a5fa" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">AUTHORIZED OUT</text>
+    <text x="202" y="98" fill="#f8fafc" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">22 Students</text>
+
+    <rect x="360" y="50" width="160" height="65" rx="8" fill="#1b2030"/>
+    <text x="372" y="75" fill="#f87171" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700">OVERDUE CURFEW</text>
+    <text x="372" y="98" fill="#f87171" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800">0 Alerts</text>
+  </g>
+
+  <rect x="150" y="390" width="300" height="22" rx="4" fill="#000000" fill-opacity="0.7"/>
+  <text x="165" y="405" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10" font-weight="600">[PLACEHOLDER: CURFEW COMMAND MOCKUP]</text>
+</svg>
+

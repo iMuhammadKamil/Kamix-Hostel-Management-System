@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none">
+  <rect x="12" y="8" width="24" height="24" rx="4" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M18 20L24 14L30 20M24 14V26" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <text x="46" y="24" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">GLOBAL HOSTEL</text>
+</svg>
+

@@ -3,6 +3,21 @@
 :root {
   --background: #f4f6fa;
   --foreground: #0b1220;
+
+  /* Landing Page Design Tokens — Reference: learnhouse.app Dark Theme */
+  --landing-bg: #07080a;
+  --landing-surface: #0e1118;
+  --landing-surface-elevated: #141824;
+  --landing-surface-card: #10131d;
+  --landing-border: rgba(255, 255, 255, 0.08);
+  --landing-border-bright: rgba(255, 255, 255, 0.18);
+  --landing-border-hover: rgba(245, 158, 11, 0.35);
+  --landing-text-primary: #f8fafc;
+  --landing-text-muted: #94a3b8;
+  --landing-text-subtle: #64748b;
+  --landing-accent: #f59e0b;
+  --landing-accent-hover: #d97706;
+  --landing-accent-glow: rgba(245, 158, 11, 0.22);
 }
 
 /*
@@ -168,6 +183,21 @@
 
   .zoom-in-95:not(.animate-in) {
     animation: kamix-zoom-in-95 200ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes landing-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: landing-fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 }
 
