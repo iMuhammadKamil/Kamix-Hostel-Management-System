@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { HmsLogo } from "@/components/HmsLogo";
 import { Menu, X, ArrowRight, Building2, LogIn } from "lucide-react";
 
 export function Navbar() {
@@ -44,24 +44,7 @@ export function Navbar() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
         {/* Left: Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group focus:outline-hidden focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg">
-          <div className="relative overflow-hidden rounded-xl border border-amber-400/30 p-0.5 bg-amber-400/10 shadow-xs">
-            <Image
-              src="/logo.png"
-              alt="HMS Logo"
-              width={40}
-              height={40}
-              className="h-8 w-auto object-cover rounded-lg"
-              priority
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="font-extrabold text-base md:text-lg text-white tracking-tight">
-              HMS
-            </span>
-            <span className="hidden sm:inline-flex text-[10px] font-mono font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">
-              Hostel System
-            </span>
-          </div>
+          <HmsLogo size="sm" theme="dark" />
         </Link>
 
         {/* Center: Real Module Navigation Links */}

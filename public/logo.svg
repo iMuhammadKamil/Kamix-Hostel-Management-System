@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <g transform="translate(-165, -165)">
+    <!-- Main Logo Body -->
+    <path d="M 170 170 L 170 350 L 235 350 L 235 305 L 285 350 L 335 350 L 335 315 L 285 270 L 335 225 L 335 170 L 285 170 L 235 215 L 235 170 Z M 170 170 L 185 185 L 170 200 Z" fill="#bcbebf" fill-rule="evenodd" />
+    <!-- Trademark Symbol -->
+    <circle cx="350" cy="178" r="6" stroke="#707376" stroke-width="1.5" fill="none" />
+    <text x="350" y="181" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#707376" text-anchor="middle">R</text>
+  </g>
+</svg>
+

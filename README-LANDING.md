@@ -75,7 +75,7 @@ Each section's copy is plain TypeScript/JSX located inside its respective file:
 
 All graphics and screenshots reside in `public/` and `public/placeholder/`:
 
-- **Main Brand Logo**: Replace `public/logo.png` with your company logo.
+- **Main Brand Logo**: Managed via `src/components/HmsLogo.tsx` and `public/logo.svg`.
 - **Hero Screenshot**: Replace `public/placeholder/hero-dashboard.svg` with a real PNG/WebP screenshot (1200×675 aspect ratio recommended).
 - **Showcase Mockups**:
   - `public/placeholder/showcase-bed-matrix.svg`
