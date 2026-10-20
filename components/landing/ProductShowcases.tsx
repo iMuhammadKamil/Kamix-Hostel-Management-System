@@ -1,28 +1,21 @@
 import Image from "next/image";
 import {
-  Bed,
   CheckCircle2,
-  Receipt,
-  ShieldCheck,
-  Zap,
-  Smartphone,
-  Gauge,
-  Lock,
 } from "lucide-react";
 
 export function ProductShowcases() {
   const showcases = [
     {
-      id: "product",
-      badge: "Visual Inventory",
-      title: "Real-time Bed Allocations & 3D Floor Telemetry",
+      id: "rooms",
+      badge: "Rooms & Beds",
+      title: "Interactive Bed Matrix & Resident Lifecycle",
       description:
-        "Say goodbye to double-booked rooms and disorganized master keys. HMS presents an interactive architectural hierarchy of branches, buildings, floors, rooms, and bed statuses updated second-by-second.",
+        "Easily view and manage your hostel's complete building hierarchy. Assign students to vacant beds with gender-enforced rules, execute seamless 1-click room swaps, and maintain an accurate live count of campus occupancy.",
       chips: [
-        "Floorplan vacancy heatmaps",
-        "Gender-isolated wing policies",
-        "1-click resident room swaps",
-        "Digital KYC verification",
+        "Color-coded Vacant, Occupied & Reserved beds",
+        "Male, Female & Co-ed wing separation",
+        "1-click resident room reassignments",
+        "Digital KYC identification storage",
       ],
       image: "/placeholder/showcase-bed-matrix.svg",
       imageAlt: "Interactive bed allocations floor matrix screenshot placeholder",
@@ -30,42 +23,42 @@ export function ProductShowcases() {
     },
     {
       id: "billing",
-      badge: "Financial Engine",
-      title: "Automated Invoicing & IoT Submeter Splitting",
+      badge: "Finance & Accounts",
+      title: "Automated Monthly Invoicing & Deposit Tracking",
       description:
-        "Eliminate arguments over shared utility bills. HMS connects to smart energy and water submeters, calculates exact per-tenant consumption, generates recurring invoices, and tracks payment reconciliation across offline and online gateways.",
+        "Keep student accounting clean and transparent. HMS automatically compiles monthly room rent invoices, records initial security deposits, and allows accountants to verify pending offline payment slips with a complete audit history.",
       chips: [
-        "Prorated rent calculations",
-        "AC kWh submeter auto-splitting",
-        "Stripe & bank receipt audit",
-        "Automatic overdue late fees",
+        "Itemized monthly rent invoice generation",
+        "Security caution deposit tracking",
+        "Offline payment slip verification",
+        "Clear Paid vs Pending payment statuses",
       ],
       image: "/placeholder/showcase-billing.svg",
-      imageAlt: "Automated student ledger and utility submeter billing screenshot placeholder",
+      imageAlt: "Student ledger and invoicing screenshot placeholder",
       reverse: true,
     },
     {
-      id: "curfew",
-      badge: "Campus Security",
-      title: "Digital Gate Passes & Automated Curfew Enforcement",
+      id: "gate",
+      badge: "Gate & Curfew Desk",
+      title: "Digital Gate Passes & Campus Curfew Monitoring",
       description:
-        "Protect resident safety without slowing down campus entry. Students request night-out passes via mobile, wardens approve with one tap, and security guards scan time-stamped QR codes at the gate.",
+        "Replace slow, lost paper sign-out books with a modern digital desk. Students submit pass requests from their phones, wardens review and approve them online, and gatekeepers log student departures and return times accurately.",
       chips: [
-        "Time-limited encrypted QR codes",
-        "Automated overdue curfew alerts",
-        "Parent SMS notifications",
-        "Guard offline scan cache",
+        "Digital Day-Out, Night-Out & Emergency passes",
+        "Warden 1-tap review and approval",
+        "Real-time log of students outside campus",
+        "Curfew compliance and return timestamps",
       ],
       image: "/placeholder/showcase-curfew.svg",
-      imageAlt: "Gate pass approval and curfew verification dashboard screenshot placeholder",
+      imageAlt: "Gate pass approval and curfew monitoring screenshot placeholder",
       reverse: false,
     },
   ];
 
   return (
     <section
-      id="product-showcases"
-      aria-label="Deep-Dive Product Showcases"
+      id="modules"
+      aria-label="Core HMS Modules"
       className="py-20 md:py-28 bg-[#090b10] border-b border-white/[0.06] space-y-24 md:space-y-36"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,4 +114,3 @@ export function ProductShowcases() {
     </section>
   );
 }
-

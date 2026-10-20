@@ -4,72 +4,69 @@ import { ArrowUpRight } from "lucide-react";
 export function ExploreMore() {
   const cards = [
     {
-      title: "Self-Hosting Quickstart Guide",
-      desc: "Deploy a production-ready HMS node on Docker in under 5 minutes with automatic SQLite or Postgres.",
-      href: "#developers",
+      title: "Interactive Bed Matrix",
+      desc: "Live visual status of all rooms, beds, and floor plans with gender allocation rules.",
+      href: "#rooms",
     },
     {
-      title: "Interactive Bed Matrix Tour",
-      desc: "Explore live floorplan vacancy telemetry, gender segregation rules, and 1-click room swaps.",
-      href: "#product",
+      title: "3-Step Resident Onboarding",
+      desc: "Guided intake workflow with digital student ID uploads and emergency contact logging.",
+      href: "/login",
     },
     {
-      title: "Smart Meter Submetering Blueprint",
-      desc: "Learn how universities split electric vehicle and room AC power bills automatically.",
+      title: "Rent Invoicing & Billing Ledger",
+      desc: "Monthly rent invoices, deposit records, and payment slip review with full audit trails.",
       href: "#billing",
     },
     {
-      title: "Curfew & Perimeter Security Whitepaper",
-      desc: "Digital gate passes, encrypted QR check-ins, and guardian escalation protocols.",
-      href: "#curfew",
+      title: "Weekly Mess Menu Planner",
+      desc: "7-day breakfast, lunch, and dinner schedule with advance meal opt-out controls.",
+      href: "#mess",
     },
     {
-      title: "Mess Food Waste Reduction Case Study",
-      desc: "How proactive meal opt-out headcounts save 34% in cafeteria kitchen operating costs.",
-      href: "#value-props",
+      title: "Gate Pass & Curfew Desk",
+      desc: "Digital Day-Out and Night-Leave pass approvals with student departure and return timestamps.",
+      href: "#gate",
     },
     {
-      title: "Role-Based Access & Governance",
-      desc: "How Super Admins, Chief Wardens, and Accountants operate within strict permission silos.",
-      href: "#features",
+      title: "Maintenance Service Queue",
+      desc: "SLA-categorized repair tickets for plumbing, electrical, carpentry, and facility issues.",
+      href: "#maintenance",
     },
     {
-      title: "University SIS / ERP Integration Docs",
-      desc: "Connect your Banner, Peoplesoft, or custom campus portal with webhook event feeds.",
-      href: "#integrations",
+      title: "Super Admin Staff Management",
+      desc: "Provision dedicated credentials for wardens, accountants, and technicians.",
+      href: "#governance",
     },
     {
-      title: "Open Source Roadmap & Community",
-      desc: "Discover upcoming milestone releases, submit pull requests, and vote on new campus modules.",
-      href: "https://github.com",
-      isExternal: true,
+      title: "Resident Self-Service Portal",
+      desc: "Students can view assigned rooms, roommate details, invoices, and meal schedules.",
+      href: "/login",
     },
   ];
 
   return (
     <section
       id="resources"
-      aria-label="Explore Platform Resources"
+      aria-label="Explore Platform Modules"
       className="py-20 md:py-28 bg-[#090b10] border-b border-white/[0.06]"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-12">
           <p className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest mb-3">
-            Documentation &amp; Guides
+            System Navigation
           </p>
           <h2 className="text-3xl font-extrabold text-white tracking-tight">
-            Explore more about the HMS ecosystem
+            Explore all built-in HMS operational modules
           </h2>
         </div>
 
-        {/* 8 Link Cards Grid */}
+        {/* 8 Real Link Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {cards.map((card, idx) => (
             <Link
               key={idx}
               href={card.href}
-              target={card.isExternal ? "_blank" : undefined}
-              rel={card.isExternal ? "noopener noreferrer" : undefined}
               className="group p-6 rounded-2xl bg-[#0e1118] border border-white/[0.08] hover:border-amber-400/40 hover:bg-[#121622] transition-all duration-200 flex flex-col justify-between"
             >
               <div>
@@ -90,4 +87,3 @@ export function ExploreMore() {
     </section>
   );
 }
-

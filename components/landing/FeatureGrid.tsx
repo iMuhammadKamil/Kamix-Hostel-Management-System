@@ -1,20 +1,20 @@
 import {
   Bed,
-  Key,
-  ShieldCheck,
-  CreditCard,
-  QrCode,
-  UtensilsCrossed,
-  Wrench,
+  Building2,
   Users,
-  Gauge,
-  BellRing,
-  Lock,
-  FileCheck2,
-  Cpu,
-  Layers,
-  History,
-  Activity,
+  UserCheck,
+  FileCheck,
+  ArrowRightLeft,
+  Receipt,
+  CreditCard,
+  CheckCircle,
+  UtensilsCrossed,
+  CalendarCheck,
+  Wrench,
+  AlertTriangle,
+  ShieldCheck,
+  Clock,
+  KeyRound,
 } from "lucide-react";
 
 export function FeatureGrid() {
@@ -22,82 +22,82 @@ export function FeatureGrid() {
     {
       icon: Bed,
       title: "Interactive Bed Matrix",
-      desc: "Instant color-coded vacancy, occupied, and maintenance status across all blocks.",
+      desc: "Instant color-coded view of Vacant, Occupied, Reserved, and Maintenance beds across all wings.",
     },
     {
-      icon: Key,
-      title: "Digital Key Release",
-      desc: "One-time check-in pin verification sent directly to students upon verified deposit.",
-    },
-    {
-      icon: CreditCard,
-      title: "Consolidated Student Ledger",
-      desc: "Room fees, meal plans, electricity submeters, and damage deposits unified.",
-    },
-    {
-      icon: QrCode,
-      title: "Digital QR Gate Passes",
-      desc: "Fast guard checkpoint scanning with real-time curfew and overdue logging.",
-    },
-    {
-      icon: UtensilsCrossed,
-      title: "Dynamic Mess Headcounts",
-      desc: "Advance meal opt-outs empower canteen chefs to minimize costly kitchen waste.",
-    },
-    {
-      icon: Wrench,
-      title: "Maintenance Kanban",
-      desc: "SLA-tracked repair requests categorized by electrical, plumbing, and carpentry.",
+      icon: Building2,
+      title: "Building & Floor Hierarchy",
+      desc: "Structured property tree mapping branches to buildings, floors, rooms, and individual bed slots.",
     },
     {
       icon: Users,
-      title: "Roommate Compatibility",
-      desc: "Smart placement based on study discipline, sleep habits, and year group.",
+      title: "Wing Gender Policies",
+      desc: "Enforced Male, Female, and Co-ed wing separation rules preventing improper bed allocations.",
     },
     {
-      icon: Gauge,
-      title: "IoT Utility Submetering",
-      desc: "Split air conditioning and heating power consumption proportionally per resident.",
+      icon: UserCheck,
+      title: "3-Step Onboarding Wizard",
+      desc: "Guided registration collecting personal profile details, KYC documents, and bed selection in one flow.",
+    },
+    {
+      icon: FileCheck,
+      title: "Digital KYC & ID Records",
+      desc: "Store student ID cards, emergency guardian contacts, and verification documents safely.",
+    },
+    {
+      icon: ArrowRightLeft,
+      title: "1-Click Room Swaps",
+      desc: "Easily transfer residents between available beds without losing invoice or deposit history.",
+    },
+    {
+      icon: Receipt,
+      title: "Monthly Rent Invoicing",
+      desc: "Generate clear rent invoices with billing months, due dates, and itemized fee totals.",
+    },
+    {
+      icon: CreditCard,
+      title: "Security Deposit Ledger",
+      desc: "Hold and track initial room caution deposits per allocation until formal tenant checkout.",
+    },
+    {
+      icon: CheckCircle,
+      title: "Payment Slip Verification",
+      desc: "Accountants review pending transaction slips and confirm receipts with full audit trails.",
+    },
+    {
+      icon: UtensilsCrossed,
+      title: "7-Day Mess Menu Planner",
+      desc: "Publish daily breakfast, lunch, and dinner menus accessible to all resident students.",
+    },
+    {
+      icon: CalendarCheck,
+      title: "Advance Meal Opt-Outs",
+      desc: "Students can mark absence before meal lock times, helping kitchen staff minimize wasted food.",
+    },
+    {
+      icon: Wrench,
+      title: "Maintenance Ticket Desk",
+      desc: "Categorize repair tickets by plumbing, electrical, carpentry, HVAC, or general campus repairs.",
+    },
+    {
+      icon: AlertTriangle,
+      title: "SLA Priority Tagging",
+      desc: "Tag urgent issues as Emergency or High priority for prompt technician assignment and resolution.",
     },
     {
       icon: ShieldCheck,
-      title: "Role-Based RBAC Security",
-      desc: "Strictly isolated access for Wardens, Accountants, Technicians, and Students.",
+      title: "Digital Gate Pass Requests",
+      desc: "Students submit day-out or night-leave requests for warden review and digital approval.",
     },
     {
-      icon: BellRing,
-      title: "Automated Parent Alerts",
-      desc: "Instant SMS/email notifications for approved leaves or overdue night curfews.",
+      icon: Clock,
+      title: "Perimeter Curfew Desk",
+      desc: "Monitor students currently outside campus, check-out timestamps, and expected return hours.",
     },
     {
-      icon: FileCheck2,
-      title: "Digital KYC & Tenancy",
-      desc: "Secure upload and verification of government IDs, student cards, and emergency contacts.",
-    },
-    {
-      icon: Lock,
-      title: "Tamper-Proof Audit Trail",
-      desc: "Every room swap, fee concession, and maintenance completion logged forever.",
-    },
-    {
-      icon: Layers,
-      title: "Multi-Campus Property Wings",
-      desc: "Hierarchical management of branches, buildings, floors, rooms, and individual beds.",
-    },
-    {
-      icon: Cpu,
-      title: "REST & Webhook APIs",
-      desc: "Bi-directional sync with university student information systems (SIS/ERP).",
-    },
-    {
-      icon: History,
-      title: "Offline Sync Resilience",
-      desc: "Gate guards keep logging check-ins even when campus WiFi experiences outages.",
-    },
-    {
-      icon: Activity,
-      title: "Campus Occupancy Analytics",
-      desc: "Executive forecasting of bed churn, yield per square foot, and revenue collections.",
+      icon: KeyRound,
+      title: "Super Admin Staff Portal",
+      desc: "Provision individual staff accounts, assign specific roles, and reset credentials securely.",
     },
   ];
 
@@ -111,17 +111,17 @@ export function FeatureGrid() {
         {/* Section Heading */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest mb-3">
-            Comprehensive Suite
+            Real Working Modules
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            Every operational tool required to run high-density residences
+            Every operational feature built into the HMS system
           </h2>
           <p className="text-slate-400 mt-4 text-sm sm:text-base">
-            From the front entrance turnstiles to the accountant ledger, HMS digitizes every step of hostel life.
+            No hypothetical promises. Every tool listed below is fully functional and ready to manage your student residences.
           </p>
         </div>
 
-        {/* 16 Compact Cards (4 cols desktop, 2 cols tablet, 1 col mobile) */}
+        {/* 16 Compact Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {features.map((feature, idx) => {
             const Icon = feature.icon;
@@ -149,4 +149,3 @@ export function FeatureGrid() {
     </section>
   );
 }
-

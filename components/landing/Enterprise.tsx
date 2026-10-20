@@ -1,83 +1,83 @@
 import Link from "next/link";
 import {
-  ShieldCheck,
-  Server,
-  Headphones,
-  Lock,
-  Layers,
-  FileText,
+  Wrench,
+  AlertTriangle,
   Clock,
-  KeyRound,
+  CheckCircle2,
+  Zap,
+  Flame,
+  Droplets,
+  Hammer,
   ArrowRight,
 } from "lucide-react";
 
 export function Enterprise() {
-  const enterpriseFeatures = [
+  const repairCategories = [
     {
-      icon: ShieldCheck,
-      title: "Custom SLA & 99.99% Uptime",
-      desc: "Guaranteed enterprise response times with 24/7 priority incident triage.",
+      icon: Droplets,
+      title: "Plumbing & Water Systems",
+      desc: "Fast reporting for pipe leaks, shower issues, and water pressure disruptions.",
     },
     {
-      icon: Server,
-      title: "Isolated Private Cloud VPC",
-      desc: "Dedicated AWS/GCP clusters with single-tenant data isolation and data residency.",
+      icon: Zap,
+      title: "Electrical & Lighting",
+      desc: "Fix short circuits, broken switches, ceiling fans, and room power outlets.",
     },
     {
-      icon: Lock,
-      title: "SAML 2.0 & Custom SSO",
-      desc: "One-click authentication via Okta, Microsoft Entra ID, Shibboleth, or Google Workspace.",
+      icon: Hammer,
+      title: "Carpentry & Furniture",
+      desc: "Address damaged bed frames, broken study desks, closets, and door hinges.",
     },
     {
-      icon: Headphones,
-      title: "Dedicated Housing Success Lead",
-      desc: "Direct Slack channel and customized staff onboarding webinars for your campus teams.",
+      icon: Flame,
+      title: "HVAC & Temperature Control",
+      desc: "Maintain heating and room ventilation units with rapid technician dispatch.",
     },
     {
-      icon: Layers,
-      title: "Multi-Campus Consortium Support",
-      desc: "Cross-campus reporting, shared bursary ledger, and tenant mobility rules.",
-    },
-    {
-      icon: FileText,
-      title: "SOC 2 Type II & FERPA Compliance",
-      desc: "Comprehensive annual audits, encrypted at rest (AES-256) and in transit (TLS 1.3).",
+      icon: AlertTriangle,
+      title: "Emergency Priority Queue",
+      desc: "Urgent hazards are flagged red and pinned to the top of technician dashboards.",
     },
     {
       icon: Clock,
-      title: "Automated Legacy Data Migration",
-      desc: "Our engineering team ports your legacy Excel rosters and room allocation history for free.",
+      title: "Resolution SLA Tracking",
+      desc: "Monitor open vs resolved ticket times to ensure campus maintenance standards.",
     },
     {
-      icon: KeyRound,
-      title: "Hardware Turnstile Integration",
-      desc: "Direct integration service with ASSA ABLOY, Salto, and Dormakaba RFID door locks.",
+      icon: CheckCircle2,
+      title: "Resident Feedback & Signoff",
+      desc: "Students see when a ticket is assigned and verify when repairs are completed.",
+    },
+    {
+      icon: Wrench,
+      title: "Technician Assignment",
+      desc: "Supervisors allocate specific repair tasks to on-duty campus maintenance staff.",
     },
   ];
 
   return (
     <section
-      id="enterprise"
-      aria-label="Enterprise University Solutions"
+      id="maintenance"
+      aria-label="Campus Maintenance Dispatch"
       className="py-20 md:py-28 bg-[#07080a] border-b border-white/[0.06]"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 border border-amber-400/25 mb-4">
-            Institutions &amp; Consortia
+            Facilities &amp; Repairs
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Enterprise resilience for 2,000+ bed university networks
+            Integrated campus maintenance &amp; repair dispatch
           </h2>
           <p className="text-slate-400 mt-4 text-base sm:text-lg">
-            Scale across dozens of residence halls with centralized financial controls, FERPA-grade data safety, and dedicated white-glove engineering support.
+            Ensure resident comfort and safety with a clear, categorized maintenance ticket queue that routes issues directly to campus technicians.
           </p>
         </div>
 
-        {/* 2x4 Grid of Feature Items with Icons */}
+        {/* 2x4 Grid of Real Maintenance Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {enterpriseFeatures.map((item, idx) => {
+          {repairCategories.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
@@ -100,13 +100,13 @@ export function Enterprise() {
           })}
         </div>
 
-        {/* Talk to Us Button */}
+        {/* Action Link */}
         <div className="text-center pt-4">
           <Link
             href="/login"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 active:bg-amber-500 shadow-lg hover:shadow-amber-400/20 transition-all focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white"
           >
-            <span>Talk to Our Enterprise Team</span>
+            <span>Sign In to Access Maintenance Desk</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -114,4 +114,3 @@ export function Enterprise() {
     </section>
   );
 }
-
