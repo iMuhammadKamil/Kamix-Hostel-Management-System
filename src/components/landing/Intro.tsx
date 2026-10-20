@@ -6,10 +6,13 @@ export function Intro() {
     <section
       id="intro"
       aria-label="Platform Mission"
-      className="py-20 md:py-28 bg-[#090b10] border-b border-white/[0.06]"
+      className="py-20 md:py-28 bg-[#090b10]"
     >
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-up">
+        <h2 className="text-sm font-semibold text-amber-400 mb-4 tracking-normal">
+          The modern campus standard
+        </h2>
+        <p className="text-xl sm:text-2xl md:text-3xl font-medium text-slate-200 tracking-tight leading-relaxed max-w-4xl mx-auto">
           Paper registers and disorganized room records slow campus staff down.
           HMS brings{" "}
           <Link
@@ -38,13 +41,13 @@ export function Intro() {
           , and{" "}
           <Link
             href="#mess"
-            className="text-purple-400 hover:text-purple-300 underline decoration-purple-400/40 underline-offset-4 inline-flex items-center gap-0.5 transition-colors font-semibold"
+            className="text-amber-400 hover:text-amber-300 underline decoration-amber-400/40 underline-offset-4 inline-flex items-center gap-0.5 transition-colors font-semibold"
           >
             cafeteria meal schedules
             <ArrowUpRight className="w-4 h-4 inline" />
           </Link>{" "}
           into one clean, reliable operations platform.
-        </h2>
+        </p>
       </div>
     </section>
   );

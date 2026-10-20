@@ -63,7 +63,7 @@ export function RoomTypeManagerModal({ roomTypes, onClose }: RoomTypeManagerModa
               <button
                 type="button"
                 onClick={() => setShowAddForm(true)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-medium text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-medium text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors cursor-pointer"
               >
                 <Plus className="w-3.5 h-3.5" />
                 <span>New Room Type</span>
@@ -94,7 +94,7 @@ export function RoomTypeManagerModal({ roomTypes, onClose }: RoomTypeManagerModa
                   <span className={`px-1.5 py-0.5 rounded-lg font-medium ${rt.hasAC ? "bg-blue-100 text-blue-800" : "bg-slate-100 text-slate-500"}`}>
                     {rt.hasAC ? "AC" : "Non-AC"}
                   </span>
-                  <span className={`px-1.5 py-0.5 rounded-lg font-medium ${rt.hasAttachedBath ? "bg-indigo-100 text-indigo-800" : "bg-slate-100 text-slate-500"}`}>
+                  <span className={`px-1.5 py-0.5 rounded-lg font-medium ${rt.hasAttachedBath ? "bg-sky-100 text-sky-800" : "bg-slate-100 text-slate-500"}`}>
                     {rt.hasAttachedBath ? "Attached Bath" : "Common Bath"}
                   </span>
                 </div>
@@ -107,7 +107,7 @@ export function RoomTypeManagerModal({ roomTypes, onClose }: RoomTypeManagerModa
         {showAddForm && (
           <form action={formAction} className="px-6 py-5 border-t border-slate-200/80 space-y-4">
             <div className="flex items-center justify-between">
-              <h4 className="font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-purple-700">
+              <h4 className="font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-blue-700">
                 Create New Pricing Template
               </h4>
               <button
@@ -182,7 +182,7 @@ export function RoomTypeManagerModal({ roomTypes, onClose }: RoomTypeManagerModa
                 <input
                   type="checkbox"
                   name="hasAC"
-                  className="rounded text-purple-600 focus:ring-purple-500 w-4 h-4"
+                  className="rounded text-blue-600 focus:ring-blue-500 w-4 h-4"
                 />
                 <span>Air Conditioned (AC)</span>
               </label>
@@ -191,7 +191,7 @@ export function RoomTypeManagerModal({ roomTypes, onClose }: RoomTypeManagerModa
                 <input
                   type="checkbox"
                   name="hasAttachedBath"
-                  className="rounded text-purple-600 focus:ring-purple-500 w-4 h-4"
+                  className="rounded text-blue-600 focus:ring-blue-500 w-4 h-4"
                 />
                 <span>Attached Bathroom</span>
               </label>

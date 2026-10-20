@@ -15,8 +15,8 @@ export function TicketStatusBadge({ status }: TicketStatusBadgeProps) {
       );
     case TicketStatuses.ASSIGNED:
       return (
-        <span className="inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.08em] bg-indigo-50 text-indigo-700 border-indigo-200">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+        <span className="inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.08em] bg-sky-50 text-sky-700 border-sky-200">
+          <span className="w-1.5 h-1.5 rounded-full bg-sky-500" />
           Assigned
         </span>
       );

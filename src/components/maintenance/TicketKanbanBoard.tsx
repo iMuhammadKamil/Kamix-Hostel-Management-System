@@ -48,7 +48,7 @@ interface TicketKanbanBoardProps {
 
 const COLUMNS = [
   { key: TicketStatuses.OPEN, label: "Open / Unassigned", bg: "bg-blue-50/60", border: "border-blue-200" },
-  { key: TicketStatuses.ASSIGNED, label: "Assigned", bg: "bg-indigo-50/60", border: "border-indigo-200" },
+  { key: TicketStatuses.ASSIGNED, label: "Assigned", bg: "bg-sky-50/60", border: "border-sky-200" },
   { key: TicketStatuses.IN_PROGRESS, label: "In Progress", bg: "bg-amber-50/60", border: "border-amber-200" },
   { key: TicketStatuses.RESOLVED, label: "Resolved", bg: "bg-emerald-50/60", border: "border-emerald-200" },
   { key: TicketStatuses.CLOSED, label: "Closed", bg: "bg-slate-100/60", border: "border-slate-200" },

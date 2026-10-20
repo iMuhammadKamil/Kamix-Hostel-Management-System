@@ -17,6 +17,7 @@ import {
   MapPin,
   ArrowRight,
   Loader2,
+  Moon,
 } from "lucide-react";
 
 interface WardenDashboardViewProps {
@@ -116,10 +117,10 @@ export function WardenDashboardView({
         >
           <div>
             <div className="flex items-center justify-between gap-3">
-              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.1em] whitespace-nowrap text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.1em] whitespace-nowrap text-slate-500 group-hover:text-blue-600 transition-colors">
                 Headcount &rarr;
               </span>
-              <div className="w-9 h-9 shrink-0 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100/80 grid place-items-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <div className="w-9 h-9 shrink-0 rounded-lg bg-blue-50 text-blue-600 border border-blue-100/80 grid place-items-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <Users className="w-4 h-4" />
               </div>
             </div>
@@ -287,12 +288,12 @@ export function WardenDashboardView({
           <div className="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-card space-y-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2 min-w-0">
-                <Clock className="w-4 h-4 text-purple-600 shrink-0" />
+                <Clock className="w-4 h-4 text-amber-600 shrink-0" />
                 <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-slate-900">
                   Night Out &amp; Leave Approvals Queue
                 </h3>
               </div>
-              <span className="shrink-0 rounded-full border border-purple-200 bg-purple-50 text-purple-700 px-2.5 py-1 font-mono text-[10px] font-medium uppercase tracking-[0.08em]">
+              <span className="shrink-0 rounded-full border border-amber-200 bg-amber-50 text-amber-800 px-2.5 py-1 font-mono text-[10px] font-medium uppercase tracking-[0.08em]">
                 {pendingNightOutPasses.length} Pending
               </span>
             </div>
@@ -309,8 +310,9 @@ export function WardenDashboardView({
                         <span className="font-semibold text-[13px] text-slate-900 truncate">
                           {pass.resident.user.fullName}
                         </span>
-                        <span className="shrink-0 rounded-full border border-purple-200 bg-purple-100 text-purple-800 px-2.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.08em]">
-                          🌙 Night Out
+                        <span className="shrink-0 rounded-full border border-slate-200 bg-slate-100 text-slate-800 px-2.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.08em] inline-flex items-center gap-1">
+                          <Moon className="w-3 h-3 text-slate-600" />
+                          <span>Night Out</span>
                         </span>
                       </div>
                       <p className="text-[13px] text-slate-700 font-medium line-clamp-1">

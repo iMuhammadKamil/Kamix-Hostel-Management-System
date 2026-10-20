@@ -193,18 +193,18 @@ export function RequestPassModal({
                 onClick={() => handlePassTypeChange(GatePassTypes.NIGHT_OUT)}
                 className={`flex flex-col p-3.5 rounded-lg border text-left transition-colors cursor-pointer ${
                   passType === GatePassTypes.NIGHT_OUT
-                    ? "bg-purple-50 border-purple-500 ring-2 ring-purple-500/20 text-purple-900 shadow-subtle"
+                    ? "bg-amber-50/70 border-amber-500 ring-2 ring-amber-500/20 text-amber-950 shadow-subtle"
                     : "bg-white border-slate-300 hover:bg-slate-50 text-slate-700 hover:border-slate-400"
                 }`}
               >
                 <div className="flex items-center gap-2 font-semibold text-[13px]">
-                  <Moon className="w-4 h-4 text-purple-600" />
+                  <Moon className="w-4 h-4 text-amber-600" />
                   Night Out / Leave
                 </div>
                 <p className="text-[12px] text-slate-500 mt-1">
                   Overnight stay or multi-day extended leave
                 </p>
-                <span className="inline-flex items-center gap-1 mt-2 text-[10px] font-medium text-purple-800 bg-purple-100 px-2 py-0.5 rounded-md w-fit">
+                <span className="inline-flex items-center gap-1 mt-2 text-[10px] font-medium text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md w-fit">
                   <Clock className="w-2.5 h-2.5" /> Requires Warden Review
                 </span>
               </button>

@@ -114,10 +114,10 @@ export function AdminDashboardView({
         >
           <div>
             <div className="flex items-center justify-between gap-3">
-              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.1em] whitespace-nowrap text-slate-500 group-hover:text-indigo-600 transition-colors">
+              <span className="font-mono text-[10px] font-medium uppercase tracking-[0.1em] whitespace-nowrap text-slate-500 group-hover:text-blue-600 transition-colors">
                 Active Residents &rarr;
               </span>
-              <div className="w-9 h-9 shrink-0 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100/80 grid place-items-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <div className="w-9 h-9 shrink-0 rounded-lg bg-blue-50 text-blue-600 border border-blue-100/80 grid place-items-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <Users className="w-4 h-4" />
               </div>
             </div>

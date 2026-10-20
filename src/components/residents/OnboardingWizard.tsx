@@ -166,7 +166,7 @@ export function OnboardingWizard({ availableBuildings }: OnboardingWizardProps) 
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="resident@example.com"
+                  placeholder="resident@campus.edu"
                   className="w-full px-3.5 py-2.5 text-[13px] rounded-lg border border-slate-300 focus:outline-hidden focus:border-blue-500 focus:ring-4 focus:ring-blue-500/12 hover:border-slate-400 transition-colors bg-white text-slate-900 placeholder:text-slate-400"
                 />
               </div>

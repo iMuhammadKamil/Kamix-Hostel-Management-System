@@ -43,10 +43,10 @@ export function LogoStrip() {
   return (
     <section
       aria-label="Supported Campus Roles"
-      className="py-12 md:py-16 bg-[#08090b] border-b border-white/[0.06] overflow-hidden"
+      className="py-12 md:py-16 bg-[#08090b] overflow-hidden"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-mono font-semibold text-slate-500 uppercase tracking-[0.2em] mb-8 text-center">
+        <p className="text-sm font-medium text-slate-300 mb-8 text-center">
           Dedicated, permission-isolated workflows for every campus stakeholder
         </p>
 
@@ -57,18 +57,14 @@ export function LogoStrip() {
             return (
               <div
                 key={r.title}
-                className="p-4 rounded-xl bg-[#0e1118] border border-white/[0.06] hover:border-amber-400/30 transition-colors flex items-center gap-3.5 group"
+                className="p-4 rounded-xl bg-[#101420] flex items-center gap-3.5 animate-fade-up"
               >
-                <div className="w-9 h-9 rounded-lg bg-amber-400/10 border border-amber-400/20 text-amber-400 flex items-center justify-center shrink-0">
-                  <Icon className="w-4 h-4" />
-                </div>
+                <Icon className="w-5 h-5 text-amber-400 shrink-0" />
                 <div className="min-w-0">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs font-bold text-white truncate group-hover:text-amber-300 transition-colors">
-                      {r.title}
-                    </span>
-                  </div>
-                  <p className="text-[11px] text-slate-400 truncate">
+                  <span className="text-sm font-semibold text-white block truncate">
+                    {r.title}
+                  </span>
+                  <p className="text-[13px] text-slate-400 truncate mt-0.5">
                     {r.desc}
                   </p>
                 </div>

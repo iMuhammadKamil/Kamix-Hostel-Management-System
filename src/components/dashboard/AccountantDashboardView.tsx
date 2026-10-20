@@ -180,12 +180,12 @@ export function AccountantDashboardView({
           <div className="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-card space-y-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-2 min-w-0">
-                <CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
                 <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-slate-900">
                   Payment Verification Queue
                 </h3>
               </div>
-              <span className="shrink-0 rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 px-2.5 py-1 font-mono text-[10px] font-medium uppercase tracking-[0.08em]">
+              <span className="shrink-0 rounded-full border border-blue-200 bg-blue-50 text-blue-700 px-2.5 py-1 font-mono text-[10px] font-medium uppercase tracking-[0.08em]">
                 {pendingPayments.length} Awaiting Review
               </span>
             </div>
@@ -195,7 +195,7 @@ export function AccountantDashboardView({
                 {pendingPayments.map((p) => (
                   <div
                     key={p.id}
-                    className="p-4 rounded-lg border border-indigo-100 bg-indigo-50/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[12px]"
+                    className="p-4 rounded-lg border border-slate-200/80 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[12px]"
                   >
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">

@@ -120,8 +120,8 @@ export function StaffManagerView({ staffList, currentUserId }: StaffManagerViewP
     switch (role) {
       case UserRoles.SUPER_ADMIN:
         return (
-          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-200">
-            <Shield className="w-3 h-3 text-purple-600" />
+          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-900 text-amber-300 border border-slate-700">
+            <Shield className="w-3 h-3 text-amber-400" />
             Super Admin
           </span>
         );

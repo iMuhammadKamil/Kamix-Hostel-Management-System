@@ -28,8 +28,8 @@ export function HmsLogo({
   }[size];
 
   const subtitleSizes = {
-    sm: "text-[10px]",
-    md: "text-[11px]",
+    sm: "text-xs",
+    md: "text-xs",
     lg: "text-xs",
     xl: "text-sm",
   }[size];
@@ -38,7 +38,7 @@ export function HmsLogo({
     <div className={`inline-flex items-center gap-3 select-none ${className}`}>
       {/* Geometric Vector Emblem Badge */}
       <div
-        className={`${badgeDimensions} shrink-0 rounded-xl bg-gradient-to-br from-[#1b1e24] via-[#0f1115] to-[#16181d] border border-white/[0.12] shadow-sm flex items-center justify-center`}
+        className={`${badgeDimensions} shrink-0 rounded-xl bg-[#131720] border border-white/10 shadow-xs flex items-center justify-center`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

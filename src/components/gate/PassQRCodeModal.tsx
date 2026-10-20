@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import QRCode from "qrcode";
-import { X, ShieldCheck, Printer, Calendar, Clock, MapPin, User, Home, AlertCircle } from "lucide-react";
+import { X, ShieldCheck, Printer, Calendar, Clock, MapPin, User, Home, AlertCircle, Moon, Sun } from "lucide-react";
 import { PassStatusBadge } from "./PassStatusBadge";
 
 interface PassQRCodeModalProps {
@@ -107,13 +107,23 @@ export function PassQRCodeModal({ isOpen, onClose, pass }: PassQRCodeModalProps)
           {/* Status & Type Bar */}
           <div className="flex items-center justify-between">
             <span
-              className={`font-mono text-[10px] font-medium px-2.5 py-1 rounded-full uppercase tracking-[0.08em] ${
+              className={`font-mono text-[10px] font-medium px-2.5 py-1 rounded-full uppercase tracking-[0.08em] inline-flex items-center gap-1.5 ${
                 isNightOut
-                  ? "bg-purple-100 text-purple-800 border border-purple-200"
+                  ? "bg-slate-100 text-slate-800 border border-slate-200"
                   : "bg-blue-100 text-blue-800 border border-blue-200"
               }`}
             >
-              {isNightOut ? "🌙 Night Out / Extended Leave" : "☀️ Day Outing Pass"}
+              {isNightOut ? (
+                <>
+                  <Moon className="w-3 h-3 text-slate-600" />
+                  <span>Night Out / Extended Leave</span>
+                </>
+              ) : (
+                <>
+                  <Sun className="w-3 h-3 text-blue-600" />
+                  <span>Day Outing Pass</span>
+                </>
+              )}
             </span>
             <PassStatusBadge status={pass.status} isOverdue={pass.isOverdue} />
           </div>

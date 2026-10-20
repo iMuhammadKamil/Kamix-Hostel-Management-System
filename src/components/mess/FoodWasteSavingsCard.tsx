@@ -12,7 +12,7 @@ export function FoodWasteSavingsCard({
   estimatedIngredientCostSaved,
 }: FoodWasteSavingsCardProps) {
   return (
-    <div className="bg-gradient-to-br from-emerald-900 to-teal-900 text-white rounded-2xl p-6 shadow-card border border-emerald-800/50 space-y-4">
+    <div className="bg-emerald-950 text-white rounded-2xl p-6 border border-emerald-800/60 space-y-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg grid place-items-center bg-emerald-500/20 text-emerald-300">

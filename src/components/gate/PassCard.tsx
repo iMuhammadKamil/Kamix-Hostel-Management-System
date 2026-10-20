@@ -24,6 +24,8 @@ import {
   Loader2,
   AlertCircle,
   Phone,
+  Moon,
+  Sun,
 } from "lucide-react";
 
 export interface GatePassData {
@@ -161,13 +163,23 @@ export function PassCard({
         <div className="flex items-start justify-between gap-2">
           <div className="flex items-center gap-2">
             <span
-              className={`font-mono text-[10px] font-medium px-2.5 py-1 rounded-full uppercase tracking-[0.08em] ${
+              className={`font-mono text-[10px] font-medium px-2.5 py-1 rounded-full uppercase tracking-[0.08em] inline-flex items-center gap-1 ${
                 isNightOut
-                  ? "bg-purple-100 text-purple-800 border border-purple-200"
+                  ? "bg-slate-100 text-slate-800 border border-slate-200"
                   : "bg-blue-100 text-blue-800 border border-blue-200"
               }`}
             >
-              {isNightOut ? "🌙 Night Out" : "☀️ Day Outing"}
+              {isNightOut ? (
+                <>
+                  <Moon className="w-3 h-3 text-slate-600" />
+                  <span>Night Out</span>
+                </>
+              ) : (
+                <>
+                  <Sun className="w-3 h-3 text-blue-600" />
+                  <span>Day Outing</span>
+                </>
+              )}
             </span>
             <span className="font-mono tabular-nums text-[11px] font-medium text-slate-400">
               #{pass.id.slice(-6).toUpperCase()}

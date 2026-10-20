@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   ShieldCheck,
   CheckCircle2,
@@ -61,17 +60,17 @@ export function Footer() {
   return (
     <footer
       aria-label="Footer"
-      className="bg-[#050608] text-slate-400 border-t border-white/[0.08] pt-16 pb-12"
+      className="bg-[#050608] text-slate-400 pt-20 pb-16"
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Links Columns */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-16">
           {linkGroups.map((group) => (
             <div key={group.title} className="space-y-4">
-              <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
+              <h4 className="text-sm font-semibold text-white">
                 {group.title}
               </h4>
-              <ul className="space-y-2.5 text-xs">
+              <ul className="space-y-2.5 text-sm">
                 {group.links.map((link) => (
                   <li key={link.label}>
                     <Link
@@ -88,25 +87,25 @@ export function Footer() {
         </div>
 
         {/* Real Security & Integrity Badges */}
-        <div className="pt-8 border-t border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-wrap items-center gap-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-slate-300">
-              <Lock className="w-3.5 h-3.5 text-emerald-400" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] text-sm font-medium text-slate-300">
+              <Lock className="w-4 h-4 text-emerald-400" />
               <span>Bcrypt Salted Credentials</span>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-slate-300">
-              <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] text-sm font-medium text-slate-300">
+              <ShieldCheck className="w-4 h-4 text-amber-400" />
               <span>Stateless Cryptographic Sessions</span>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-slate-300">
-              <KeyRound className="w-3.5 h-3.5 text-blue-400" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] text-sm font-medium text-slate-300">
+              <KeyRound className="w-4 h-4 text-blue-400" />
               <span>Server-Side RBAC Enforcement</span>
             </div>
           </div>
 
           <Link
             href="/login"
-            className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors"
           >
             <LogIn className="w-4 h-4" />
             <span>Sign In to Your Account &rarr;</span>
@@ -114,9 +113,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar: Copyright */}
-        <div className="mt-8 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
           <p>© {new Date().getFullYear()} HMS — Hostel Management System. All rights reserved.</p>
-          <p className="font-mono text-[11px] text-slate-400">Enterprise Campus Residence Platform</p>
+          <p className="text-sm text-slate-400">Campus Residence Platform</p>
         </div>
       </div>
     </footer>

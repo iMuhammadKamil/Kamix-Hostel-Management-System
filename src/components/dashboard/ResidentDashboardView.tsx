@@ -181,7 +181,7 @@ export function ResidentDashboardView({
               <span className="font-mono text-[10px] font-medium uppercase tracking-[0.16em] text-slate-500">
                 Gate Pass Status
               </span>
-              <div className="w-9 h-9 shrink-0 rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100/80 grid place-items-center">
+              <div className="w-9 h-9 shrink-0 rounded-lg bg-blue-50 text-blue-600 border border-blue-100/80 grid place-items-center">
                 <ShieldCheck className="w-4 h-4" />
               </div>
             </div>
@@ -233,7 +233,7 @@ export function ResidentDashboardView({
           <div className="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-card space-y-4">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-2 min-w-0">
-                <ShieldCheck className="w-5 h-5 text-indigo-600 shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0" />
                 <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-slate-900">
                   Campus Movement &amp; Gate Pass
                 </h3>
@@ -247,7 +247,7 @@ export function ResidentDashboardView({
             </div>
 
             {myActivePass ? (
-              <div className="p-4.5 rounded-xl bg-indigo-50/40 border border-indigo-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="p-4.5 rounded-xl bg-blue-50/40 border border-blue-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="space-y-1 text-[12px] min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[15px] font-medium text-slate-900 tabular-nums">
@@ -276,7 +276,7 @@ export function ResidentDashboardView({
                   onClick={() => setIsQRModalOpen(true)}
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-semibold text-[13px] shadow-xs transition-colors shrink-0 focus:outline-hidden focus:ring-4 focus:ring-slate-900/20"
                 >
-                  <QrCode className="w-4 h-4 text-indigo-400" /> Digital QR Pass
+                  <QrCode className="w-4 h-4 text-blue-400" /> Digital QR Pass
                 </button>
               </div>
             ) : (

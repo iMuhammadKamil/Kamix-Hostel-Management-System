@@ -358,7 +358,7 @@ export function FloorPlanView({
                   <span
                     className={`px-1.5 py-0.5 rounded-lg font-medium ${
                       room.roomType.hasAttachedBath
-                        ? "bg-indigo-50 text-indigo-700 border border-indigo-200"
+                        ? "bg-blue-50 text-blue-700 border border-blue-200"
                         : "bg-slate-50 text-slate-400"
                     }`}
                   >

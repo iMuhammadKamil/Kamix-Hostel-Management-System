@@ -1,0 +1,2167 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-20T11:26:15.652Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 44,
+    "transitions": 1,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6856,
+     "screens": 7.6,
+     "words": 883,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 53,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 6,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 6,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "chars": 25,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "Albert Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.06,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.62,
+     "top": 160,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "lines": 2,
+     "size": 72,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Campus housing, resolved.",
+      "words": 3,
+      "chars": 25,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 160,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Interactive Bed Matrix & Resident Lifecycle",
+      "words": 6,
+      "chars": 43,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2229,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Automated Monthly Invoicing & Deposit Tracking",
+      "words": 6,
+      "chars": 46,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 2755,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Digital Gate Passes & Campus Curfew Monitoring",
+      "words": 7,
+      "chars": 46,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 3281,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Weekly Meal Schedules & Waste Prevention",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 3814,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Categorized Maintenance & Technician Dispatch",
+      "words": 5,
+      "chars": 45,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 4329,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Security & role governance",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4932,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hostel operations, resolved.",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 5904,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      60,
+      72
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "Albert Sans",
+      "text": "Campus housing,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [
+      "Hostel System"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.15,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f6fa",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.37,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#07080a",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.03
+       }
+      },
+      {
+       "color": "#07090e",
+       "top": 0,
+       "hsl": {
+        "h": 223,
+        "s": 0.33,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#0c0e15",
+       "top": 670,
+       "hsl": {
+        "h": 227,
+        "s": 0.27,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#090b10",
+       "top": 1613,
+       "hsl": {
+        "h": 223,
+        "s": 0.28,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#050608",
+       "top": 6308,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.03
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#cad5e2",
+       "share": 0.49
+      },
+      {
+       "color": "#90a1b9",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#ffb900",
+       "share": 0.03
+      },
+      {
+       "color": "#e2e8f0",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffb900",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#020618"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 12,
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign In to Portal",
+      "Sign In to Portal",
+      "Explore Working Modules"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 17,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2355
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4932
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.18
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "albert sans fallback",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6856,
+    "margins": {
+     "left": 152,
+     "right": 170
+    },
+    "sections": [
+     {
+      "sel": "section#hero.relative.pt-32",
+      "tag": "section",
+      "top": 0,
+      "height": 1359,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Campus housing,",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 209,
+      "right": 208,
+      "textLeft": 232,
+      "textRight": 208,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-12.md:py-16",
+      "tag": "section",
+      "top": 1359,
+      "height": 254,
+      "words": 43,
+      "media": 0,
+      "middle": 39,
+      "heading": null,
+      "left": 202,
+      "right": 97,
+      "textLeft": 202,
+      "textRight": 97,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intro.py-20.md:py-28",
+      "tag": "section",
+      "top": 1613,
+      "height": 504,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Paper registers and disorganized room records slow",
+       "size": 30,
+       "tag": "p"
+      },
+      "left": 292,
+      "right": 292,
+      "textLeft": 292,
+      "textRight": 292,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#modules.py-20.md:py-28",
+      "tag": "section",
+      "top": 2117,
+      "height": 2687,
+      "words": 531,
+      "media": 0,
+      "middle": 65,
+      "heading": {
+       "text": "Interactive Bed Matrix & Resident Lifecycle",
+       "size": 36,
+       "tag": "h3"
+      },
+      "left": 152,
+      "right": 169,
+      "textLeft": 152,
+      "textRight": 169,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#governance.py-24.md:py-32",
+      "tag": "section",
+      "top": 4804,
+      "height": 956,
+      "words": 120,
+      "media": 0,
+      "middle": 96,
+      "heading": {
+       "text": "Security & role governance",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 152,
+      "right": 210,
+      "textLeft": 152,
+      "textRight": 210,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cta.py-24.md:py-36",
+      "tag": "section",
+      "top": 5760,
+      "height": 548,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Hostel operations, resolved.",
+       "size": 60,
+       "tag": "h2"
+      },
+      "left": 356,
+      "right": 356,
+      "textLeft": 356,
+      "textRight": 356,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#050608].text-slate-400",
+      "tag": "footer",
+      "top": 6308,
+      "height": 548,
+      "words": 94,
+      "media": 0,
+      "middle": 86,
+      "heading": {
+       "text": "Property & Beds",
+       "size": 14,
+       "tag": "h4"
+      },
+      "left": 152,
+      "right": 152,
+      "textLeft": 152,
+      "textRight": 152,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 5596,
+      "height": 308
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Campus housing, resolved.",
+      "size": 72,
+      "top": 160,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 152,
+      "n": 8
+     },
+     {
+      "x": 684,
+      "n": 6
+     },
+     {
+      "x": 752,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 18,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.12,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 360,
+     "h": 420
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.99,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 44,
+    "transitions": 1,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8813,
+     "screens": 8.6,
+     "words": 883,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 53,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 6,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 6,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "chars": 25,
+     "lines": 2,
+     "size": 60,
+     "vw": 7.8,
+     "font": "Albert Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.06,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 160,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "lines": 2,
+     "size": 60,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Campus housing, resolved.",
+      "words": 3,
+      "chars": 25,
+      "lines": 2,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 160,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Interactive Bed Matrix & Resident Lifecycle",
+      "words": 6,
+      "chars": 43,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2311,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Automated Monthly Invoicing & Deposit Tracking",
+      "words": 6,
+      "chars": 46,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3046,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Digital Gate Passes & Campus Curfew Monitoring",
+      "words": 7,
+      "chars": 46,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3925,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Weekly Meal Schedules & Waste Prevention",
+      "words": 6,
+      "chars": 40,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4781,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Categorized Maintenance & Technician Dispatch",
+      "words": 5,
+      "chars": 45,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5589,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Security & role governance",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6537,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hostel operations, resolved.",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 7633,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      60
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 90,
+     "max": {
+      "size": 60,
+      "vw": 7.8,
+      "font": "Albert Sans",
+      "text": "Campus housing,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [
+      "Hostel System"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.15,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f6fa",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.37,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#07080a",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.03
+       }
+      },
+      {
+       "color": "#07090e",
+       "top": 0,
+       "hsl": {
+        "h": 223,
+        "s": 0.33,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#0c0e15",
+       "top": 695,
+       "hsl": {
+        "h": 227,
+        "s": 0.27,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#08090b",
+       "top": 1213,
+       "hsl": {
+        "h": 220,
+        "s": 0.16,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#090b10",
+       "top": 1647,
+       "hsl": {
+        "h": 223,
+        "s": 0.28,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#0c1018",
+       "top": 3411,
+       "hsl": {
+        "h": 220,
+        "s": 0.33,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#050608",
+       "top": 8141,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.03
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#cad5e2",
+       "share": 0.49
+      },
+      {
+       "color": "#90a1b9",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#ffb900",
+       "share": 0.03
+      },
+      {
+       "color": "#e2e8f0",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffb900",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#020618"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": 12,
+     "height": 56,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign In to Portal",
+      "Sign In to Portal",
+      "Explore Working Modules"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 17,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2731
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.3
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "albert sans fallback",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8813,
+    "margins": {
+     "left": 24,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section#hero.relative.pt-32",
+      "tag": "section",
+      "top": 0,
+      "height": 1213,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Campus housing,",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 78,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-12.md:py-16",
+      "tag": "section",
+      "top": 1213,
+      "height": 434,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 74,
+      "right": 110,
+      "textLeft": 74,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intro.py-20.md:py-28",
+      "tag": "section",
+      "top": 1647,
+      "height": 553,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Paper registers and disorganized room records slow",
+       "size": 30,
+       "tag": "p"
+      },
+      "left": 34,
+      "right": 34,
+      "textLeft": 34,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#modules.py-20.md:py-28",
+      "tag": "section",
+      "top": 2199,
+      "height": 4210,
+      "words": 531,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Interactive Bed Matrix & Resident Lifecycle",
+       "size": 36,
+       "tag": "h3"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#governance.py-24.md:py-32",
+      "tag": "section",
+      "top": 6409,
+      "height": 1080,
+      "words": 120,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Security & role governance",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 50,
+      "textLeft": 24,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cta.py-24.md:py-36",
+      "tag": "section",
+      "top": 7489,
+      "height": 653,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Hostel operations, resolved.",
+       "size": 60,
+       "tag": "h2"
+      },
+      "left": 71,
+      "right": 71,
+      "textLeft": 71,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#050608].text-slate-400",
+      "tag": "footer",
+      "top": 8141,
+      "height": 672,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Property & Beds",
+       "size": 14,
+       "tag": "h4"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Campus housing, resolved.",
+      "size": 60,
+      "top": 160,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 12
+     },
+     {
+      "x": 56,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 18,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.99,
+    0.99,
+    0.99,
+    1,
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    0.99,
+    1,
+    0.99
+   ],
+   "motion": {
+    "elements": 46,
+    "css": 44,
+    "transitions": 1,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 10144,
+     "screens": 12,
+     "words": 866,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 53,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 6,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 6,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "chars": 25,
+     "lines": 2,
+     "size": 36,
+     "vw": 9.2,
+     "font": "Albert Sans",
+     "weight": 700,
+     "tracking": -0.035,
+     "leading": 1.06,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 128,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Campus housing, resolved.",
+     "words": 3,
+     "lines": 2,
+     "size": 36,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Campus housing, resolved.",
+      "words": 3,
+      "chars": 25,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 128,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Interactive Bed Matrix & Resident Lifecycle",
+      "words": 6,
+      "chars": 43,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2197,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Automated Monthly Invoicing & Deposit Tracking",
+      "words": 6,
+      "chars": 46,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3181,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Digital Gate Passes & Campus Curfew Monitoring",
+      "words": 7,
+      "chars": 46,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4209,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Weekly Meal Schedules & Waste Prevention",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5216,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Categorized Maintenance & Technician Dispatch",
+      "words": 5,
+      "chars": 45,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6245,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Security & role governance",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7348,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Hostel operations, resolved.",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8653,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      12,
+      13,
+      14,
+      16,
+      20,
+      24,
+      30,
+      36
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.4
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "Albert Sans",
+      "text": "Campus housing,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "monospace"
+     ],
+     "monoSamples": [
+      "Hostel System"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.16,
+     "smallText": 2
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f6fa",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.37,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#07080a",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.03
+       }
+      },
+      {
+       "color": "#07090e",
+       "top": 0,
+       "hsl": {
+        "h": 223,
+        "s": 0.33,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#08090b",
+       "top": 1091,
+       "hsl": {
+        "h": 220,
+        "s": 0.16,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#090b10",
+       "top": 1693,
+       "hsl": {
+        "h": 223,
+        "s": 0.28,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#0c0e15",
+       "top": 2707,
+       "hsl": {
+        "h": 227,
+        "s": 0.27,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#0c1018",
+       "top": 2708,
+       "hsl": {
+        "h": 220,
+        "s": 0.33,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#101420",
+       "top": 7859,
+       "hsl": {
+        "h": 225,
+        "s": 0.33,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#050608",
+       "top": 9052,
+       "hsl": {
+        "h": 220,
+        "s": 0.23,
+        "l": 0.03
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#cad5e2",
+       "share": 0.48
+      },
+      {
+       "color": "#90a1b9",
+       "share": 0.22
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#ffb900",
+       "share": 0.04
+      },
+      {
+       "color": "#e2e8f0",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffb900",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#020618"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 12,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign In to Portal",
+      "Explore Working Modules"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 26,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "albert sans fallback",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 10144,
+    "margins": {
+     "left": 16,
+     "right": 19
+    },
+    "sections": [
+     {
+      "sel": "section#hero.relative.pt-32",
+      "tag": "section",
+      "top": 0,
+      "height": 1091,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Campus housing,",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-12.md:py-16",
+      "tag": "section",
+      "top": 1091,
+      "height": 603,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 29,
+      "right": 29,
+      "textLeft": 29,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#intro.py-20.md:py-28",
+      "tag": "section",
+      "top": 1693,
+      "height": 424,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The modern campus standard",
+       "size": 14,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 26,
+      "textLeft": 26,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#modules.py-20.md:py-28",
+      "tag": "section",
+      "top": 2117,
+      "height": 5135,
+      "words": 531,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Interactive Bed Matrix & Resident Lifecycle",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#governance.py-24.md:py-32",
+      "tag": "section",
+      "top": 7252,
+      "height": 1306,
+      "words": 120,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Security & role governance",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#cta.py-24.md:py-36",
+      "tag": "section",
+      "top": 8557,
+      "height": 495,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Hostel operations, resolved.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 19,
+      "textLeft": 18,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-[#050608].text-slate-400",
+      "tag": "footer",
+      "top": 9052,
+      "height": 1092,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Property & Beds",
+       "size": 14,
+       "tag": "h4"
+      },
+      "left": 16,
+      "right": 25,
+      "textLeft": 16,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Campus housing, resolved.",
+      "size": 36,
+      "top": 128,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 12
+     },
+     {
+      "x": 48,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 18,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (10, 12, 13, 14, 16, 18, 20, 24, 30, 36, 60, 72).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-real-pictures",
+   "width": 1440,
+   "message": "Only 0 real photograph(s) or clip(s); the rest are interface fragments.",
+   "fix": "Add two or more real pictures of the customer's world from scripts/assets.mjs, not stock of people at laptops."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "2 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 152px on the left, 170px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 768,
+   "message": "Longest paragraph runs about 90 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"Campus housing, resolved.\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\Users\\Admin\\Desktop\\kamix HMS\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

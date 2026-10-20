@@ -3,25 +3,19 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { LogoStrip } from "@/components/landing/LogoStrip";
 import { Intro } from "@/components/landing/Intro";
-import { ValueProps } from "@/components/landing/ValueProps";
-import { StatsSection } from "@/components/landing/StatsSection";
-import { FeatureGrid } from "@/components/landing/FeatureGrid";
 import { ProductShowcases } from "@/components/landing/ProductShowcases";
-import { Integrations } from "@/components/landing/Integrations";
 import { Developers } from "@/components/landing/Developers";
-import { Enterprise } from "@/components/landing/Enterprise";
-import { ExploreMore } from "@/components/landing/ExploreMore";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata: Metadata = {
   title: "HMS — Hostel Management System | Open Core Campus Residence OS",
   description:
-    "Allocate rooms faster, automate campus billing submeters, and keep students safe with the modern open-core operating system for university hostels.",
+    "Allocate rooms faster, automate campus billing submeters, and keep students safe with the modern operating system for university hostels.",
   openGraph: {
     title: "HMS — Hostel Management System",
     description:
-      "The modern, open-core operating system built for university residence halls, housing directors, and campus life teams.",
+      "The modern operating system built for university residence halls, housing directors, and campus life teams.",
     url: "https://campus-hms.internal",
     siteName: "HMS",
     images: [
@@ -46,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#07080a] text-slate-100 font-sans selection:bg-amber-400/20 selection:text-amber-300 antialiased overflow-x-hidden">
+    <div className="min-h-[100dvh] bg-[#07080a] text-slate-100 font-sans selection:bg-amber-400/20 selection:text-amber-300 antialiased overflow-x-hidden">
       {/* 1. Navbar */}
       <Navbar />
 
@@ -54,41 +48,23 @@ export default function LandingPage() {
         {/* 2. Hero */}
         <Hero />
 
-        {/* 3. Logo Strip */}
+        {/* 3. Logo Strip — 5 Campus Roles */}
         <LogoStrip />
 
-        {/* 4. Intro */}
+        {/* 4. Intro — Platform Mission */}
         <Intro />
 
-        {/* 5. Value Props */}
-        <ValueProps />
-
-        {/* 6. Stats Section */}
-        <StatsSection />
-
-        {/* 7. Feature Grid */}
-        <FeatureGrid />
-
-        {/* 8. Product Showcases */}
+        {/* 5. Product Showcases — 5 Core Working Modules */}
         <ProductShowcases />
 
-        {/* 9. Integrations */}
-        <Integrations />
-
-        {/* 10. Open Source / Developers */}
+        {/* 6. Security & Account Governance */}
         <Developers />
 
-        {/* 11. Enterprise */}
-        <Enterprise />
-
-        {/* 12. Explore More */}
-        <ExploreMore />
-
-        {/* 13. Final CTA */}
+        {/* 7. Final Call to Action */}
         <FinalCta />
       </main>
 
-      {/* 14. Footer */}
+      {/* 8. Footer */}
       <Footer />
     </div>
   );
