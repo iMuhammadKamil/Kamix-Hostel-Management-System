@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kamix HMS - Modern Hostel Management System",
+  title: "HMS — Hostel Management System",
   description: "Enterprise Hostel Management, Bed Allocations, Finance & Resident Portal",
 };
 

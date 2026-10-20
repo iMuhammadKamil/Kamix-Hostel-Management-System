@@ -15,9 +15,20 @@ export async function loginAction(prevState: any, formData: FormData) {
   }
 
   try {
-    const user = await prisma.user.findUnique({
+    let user = await prisma.user.findUnique({
       where: { email },
     });
+
+    // If database is completely empty on fresh install, auto-seed default admin
+    if (!user) {
+      const userCount = await prisma.user.count();
+      if (userCount === 0) {
+        await ensureDatabaseSeeded();
+        user = await prisma.user.findUnique({
+          where: { email },
+        });
+      }
+    }
 
     if (!user || !user.isActive) {
       return { error: "Invalid credentials or account is inactive." };
@@ -38,39 +49,6 @@ export async function loginAction(prevState: any, formData: FormData) {
 
   revalidatePath("/", "layout");
   redirect("/dashboard");
-}
-
-export async function devQuickLoginAction(role: string) {
-  try {
-    let user = await prisma.user.findFirst({
-      where: { role, isActive: true },
-    });
-
-    // If database is empty, seed initial personas automatically
-    if (!user) {
-      await ensureDatabaseSeeded();
-      user = await prisma.user.findFirst({
-        where: { role, isActive: true },
-      });
-    }
-
-    if (!user) {
-      return {
-        success: false,
-        message: `No active user found for role: ${role}. Database may still be initializing.`,
-      };
-    }
-
-    await createSession(user.id);
-    revalidatePath("/", "layout");
-    return { success: true, role: user.role };
-  } catch (error: any) {
-    console.error("Dev quick login error:", error);
-    return {
-      success: false,
-      message: `Database error: ${error?.message || "Could not reach database. Check Vercel DATABASE_URL."}`,
-    };
-  }
 }
 
 export async function logoutAction() {

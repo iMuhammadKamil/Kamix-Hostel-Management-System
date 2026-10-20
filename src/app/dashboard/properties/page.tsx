@@ -1,12 +1,17 @@
 import { requireAuth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { UserRoles } from "@/lib/constants";
 import { Navbar } from "@/components/Navbar";
 import { FloorPlanView } from "@/components/properties/FloorPlanView";
 import Link from "next/link";
 import { ArrowLeft, Building2 } from "lucide-react";
 
 export default async function PropertiesPage() {
-  const user = await requireAuth();
+  const user = await requireAuth([
+    UserRoles.SUPER_ADMIN,
+    UserRoles.WARDEN,
+    UserRoles.MAINTENANCE_STAFF,
+  ]);
 
   const [branch, buildings, roomTypes] = await Promise.all([
     prisma.branch.findFirst({
