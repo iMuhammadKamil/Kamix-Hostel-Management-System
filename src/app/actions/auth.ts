@@ -7,43 +7,60 @@ import { createSession, clearSession, verifyPassword } from "@/lib/auth";
 import { ensureDatabaseSeeded } from "@/lib/seed-runner";
 
 export async function loginAction(prevState: any, formData: FormData) {
-  const email = (formData.get("email") as string)?.trim().toLowerCase();
+  const rawIdentifier = (formData.get("email") as string)?.trim();
   const password = formData.get("password") as string;
 
-  if (!email || !password) {
-    return { error: "Please provide both email and password." };
+  if (!rawIdentifier || !password) {
+    return { error: "Please provide both your email/username and password." };
   }
 
+  const identifierLower = rawIdentifier.toLowerCase();
+  const withDomain = identifierLower.includes("@") ? identifierLower : `${identifierLower}@hms.com`;
+
   try {
-    let user = await prisma.user.findUnique({
-      where: { email },
+    let user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: identifierLower },
+          { email: withDomain },
+        ],
+      },
     });
 
-    // If database is completely empty on fresh install, auto-seed default admin
+    // If database is completely empty on fresh install, auto-seed default accounts
     if (!user) {
       const userCount = await prisma.user.count();
       if (userCount === 0) {
         await ensureDatabaseSeeded();
-        user = await prisma.user.findUnique({
-          where: { email },
+        user = await prisma.user.findFirst({
+          where: {
+            OR: [
+              { email: identifierLower },
+              { email: withDomain },
+            ],
+          },
         });
       }
     }
 
-    if (!user || !user.isActive) {
-      return { error: "Invalid credentials or account is inactive." };
+    if (!user) {
+      return { error: `No account found matching "${rawIdentifier}". Please verify your email or username.` };
+    }
+
+    if (!user.isActive) {
+      return { error: `The account for ${user.email} is currently inactive. Please contact the administrator.` };
     }
 
     const isValid = await verifyPassword(password, user.passwordHash);
     if (!isValid) {
-      return { error: "Invalid credentials. Please check your password." };
+      return { error: "Incorrect password. Please verify your credentials and try again." };
     }
 
     await createSession(user.id);
   } catch (error: any) {
     console.error("Login action error:", error);
     return {
-      error: `Database connection error: ${error?.message || "Please ensure DATABASE_URL is configured on Vercel."}`,
+      error: `Authentication failed: ${error?.message || "Please check your database connection."}`,
     };
   }
 

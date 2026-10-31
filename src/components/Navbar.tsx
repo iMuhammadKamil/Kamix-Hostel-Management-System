@@ -40,11 +40,11 @@ export function Navbar({ user }: NavbarProps) {
 
   const allNavLinks = [
     { href: "/dashboard", label: "Overview", icon: LayoutDashboard, roles: ["ALL"] },
-    { href: "/dashboard/properties", label: "Rooms & Beds", icon: Grid3X3, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.MAINTENANCE_STAFF] },
+    { href: "/dashboard/properties", label: "Rooms & Beds", icon: Grid3X3, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.ACCOUNTANT, UserRoles.MAINTENANCE_STAFF] },
     { href: "/dashboard/residents", label: "Residents", icon: Users, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.ACCOUNTANT] },
     { href: "/dashboard/staff", label: "Staff & Team", icon: UserCheck, roles: [UserRoles.SUPER_ADMIN] },
     { href: "/dashboard/billing", label: "Billing & Finance", icon: Receipt, roles: [UserRoles.SUPER_ADMIN, UserRoles.ACCOUNTANT, UserRoles.RESIDENT] },
-    { href: "/dashboard/mess", label: "Mess & Canteen", icon: UtensilsCrossed, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.RESIDENT] },
+    { href: "/dashboard/mess", label: "Mess & Canteen", icon: UtensilsCrossed, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.ACCOUNTANT, UserRoles.RESIDENT] },
     { href: "/dashboard/maintenance", label: "Maintenance", icon: Wrench, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.MAINTENANCE_STAFF, UserRoles.RESIDENT] },
     { href: "/dashboard/gate", label: "Gate & Curfew", icon: ShieldCheck, roles: [UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.MAINTENANCE_STAFF, UserRoles.RESIDENT] },
   ];

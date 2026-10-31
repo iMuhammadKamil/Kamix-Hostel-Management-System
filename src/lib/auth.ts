@@ -66,9 +66,13 @@ export async function createSession(userId: string) {
   }).catch(() => {});
 
   const cookieStore = await cookies();
+  // Enable secure flag only on HTTPS production deployments (e.g., Vercel)
+  // to avoid silent cookie drops when testing locally over HTTP
+  const isSecure = process.env.VERCEL === "1" || (process.env.NODE_ENV === "production" && process.env.NEXT_PUBLIC_APP_URL?.startsWith("https://"));
+
   cookieStore.set(SESSION_COOKIE_NAME, sessionToken, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: !!isSecure,
     sameSite: "lax",
     expires,
     path: "/",
@@ -130,8 +134,22 @@ export async function clearSession() {
     await prisma.session.deleteMany({
       where: { sessionToken: token },
     }).catch(() => {});
-    cookieStore.delete(SESSION_COOKIE_NAME);
   }
+
+  // Set expired cookie on root path to ensure immediate browser removal
+  cookieStore.set(SESSION_COOKIE_NAME, "", {
+    httpOnly: true,
+    sameSite: "lax",
+    path: "/",
+    expires: new Date(0),
+    maxAge: 0,
+  });
+
+  // Also call delete for compatibility
+  cookieStore.delete({
+    name: SESSION_COOKIE_NAME,
+    path: "/",
+  });
 }
 
 export async function requireAuth(allowedRoles?: UserRole[]) {

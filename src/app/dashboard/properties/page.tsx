@@ -10,6 +10,7 @@ export default async function PropertiesPage() {
   const user = await requireAuth([
     UserRoles.SUPER_ADMIN,
     UserRoles.WARDEN,
+    UserRoles.ACCOUNTANT,
     UserRoles.MAINTENANCE_STAFF,
   ]);
 

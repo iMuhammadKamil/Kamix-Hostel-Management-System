@@ -402,6 +402,16 @@ export default async function DashboardPage() {
             todayMenu={todayMenu}
           />
         )}
+
+        {/* Fallback for unrecognized custom staff roles */}
+        {![UserRoles.SUPER_ADMIN, UserRoles.WARDEN, UserRoles.ACCOUNTANT, UserRoles.MAINTENANCE_STAFF, UserRoles.RESIDENT].includes(user.role as any) && (
+          <div className="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs text-center space-y-3">
+            <h2 className="text-base font-bold text-slate-800">Operational Workspace Active</h2>
+            <p className="text-xs text-slate-500 max-w-md mx-auto">
+              Your account has been verified as <strong className="font-mono text-slate-700">{user.role}</strong>. Please use the navigation bar above to access your assigned management portals.
+            </p>
+          </div>
+        )}
       </main>
     </div>
   );

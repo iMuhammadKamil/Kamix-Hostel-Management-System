@@ -20,15 +20,17 @@ export async function createStaffAccountAction(prevState: any, formData: FormDat
   }
 
   const fullName = (formData.get("fullName") as string)?.trim();
-  const email = (formData.get("email") as string)?.trim().toLowerCase();
+  let rawEmail = (formData.get("email") as string)?.trim().toLowerCase();
   const password = formData.get("password") as string;
   const phoneNumber = (formData.get("phoneNumber") as string)?.trim() || null;
   const role = formData.get("role") as string;
   const department = (formData.get("department") as string)?.trim() || "MANAGEMENT";
 
-  if (!fullName || !email || !password || !role) {
-    return { error: "Please fill in all required fields (Name, Email, Password, Role)." };
+  if (!fullName || !rawEmail || !password || !role) {
+    return { error: "Please fill in all required fields (Name, Email/Username, Password, Role)." };
   }
+
+  const email = rawEmail.includes("@") ? rawEmail : `${rawEmail}@hms.com`;
 
   if (password.length < 6) {
     return { error: "Password must be at least 6 characters long." };
@@ -46,7 +48,7 @@ export async function createStaffAccountAction(prevState: any, formData: FormDat
     });
 
     if (existing) {
-      return { error: `An account with email "${email}" already exists.` };
+      return { error: `An account with login email "${email}" already exists. Please choose a different email or username.` };
     }
 
     const passwordHash = await bcrypt.hash(password, 10);
@@ -68,7 +70,11 @@ export async function createStaffAccountAction(prevState: any, formData: FormDat
     });
 
     revalidatePath("/dashboard/staff");
-    return { success: true, message: `Staff account created for ${fullName} (${role}).` };
+    revalidatePath("/dashboard");
+    return {
+      success: true,
+      message: `Staff account successfully created! Login: "${email}" or "${rawEmail}" with role ${role}.`,
+    };
   } catch (error: any) {
     console.error("Create staff error:", error);
     return { error: `Failed to create staff account: ${error.message}` };
